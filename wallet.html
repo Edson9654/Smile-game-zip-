@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Carteira</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💰 Carteira</h1>
+
+<p id="info"></p>
+
+<button onclick="location.href='games/roulette.html'">Jogar</button>
+
+<script>
+let user = JSON.parse(localStorage.getItem("utilizadorAtual"));
+document.getElementById("info").innerText =
+user.nome + " - Saldo: " + user.saldo;
+</script>
+
+</body>
+</html>
